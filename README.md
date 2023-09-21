@@ -3,7 +3,7 @@
 ![Private - Docker Registry](./documentation/image.png)
 
 ### Start docker
-using [makefile](https://opensource.com/article/18/8/what-how-makefile)
+Using [makefile](https://opensource.com/article/18/8/what-how-makefile)
 ```bash
 make init
 ```
