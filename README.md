@@ -55,7 +55,7 @@ ssh deploy@152.67.70.96 -t "docker system prune -af"
 ```
 
 ### Docker-registry Bcode URL 
->https://registry.bcode.kg
+>https://registry.bcode.kg/v2
 
 
 
