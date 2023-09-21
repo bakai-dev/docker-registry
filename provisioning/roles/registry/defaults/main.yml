@@ -1,0 +1,4 @@
+certbot_email: developer.bakai@gmail.com
+certbot_hosts:
+    - registry.bcode.kg
+    - cache-registry.bcode.kg
