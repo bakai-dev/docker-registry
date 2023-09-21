@@ -11,7 +11,7 @@ password: password
 >http://localhost:500
 
 ### Change password 
-using file htpasswd
+Using [htpasswd](https://docs.openshift.com/container-platform/4.8/authentication/identity_providers/configuring-htpasswd-identity-provider.html)
 ```bash
 htpasswd -c -B -b </path/to/htpasswd> <user_name> <password>
 ```
@@ -29,8 +29,8 @@ docker login -u registry -p password localhost:5000
 ```
 
 ### Install docker in server 
-with ansible in provisioning folder
-cd provisioning
+>with ansible in provisioning folder
+>cd provisioning
 > setup ssh host hosts.yml.dist > hosts.yml
 Install docker | certbot in server
 ```bash
@@ -43,7 +43,7 @@ make authorize
 ```
 
 ### Deploy
-change 152.67.70.96 > your server address
+>change 152.67.70.96 > your server address
 ```bash
 HOST=152.67.70.96 PORT=22 make deploy HTPASSWD_FILE=htpasswd
 ```
@@ -53,8 +53,8 @@ HOST=152.67.70.96 PORT=22 make deploy HTPASSWD_FILE=htpasswd
 ssh deploy@152.67.70.96 -t "docker system prune -af"
 ```
 
-### Bcode URL 
+### Docker-registry Bcode URL 
 >https://registry.bcode.kg
-> 
 
-# docker-registry
+
+
